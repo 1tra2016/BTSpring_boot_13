@@ -1,5 +1,6 @@
 package springboot.ss11.exception;
 
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.MethodArgumentNotValidException;
@@ -12,6 +13,7 @@ import springboot.ss11.exception.*;
 import java.util.HashMap;
 import java.util.Map;
 
+@Slf4j
 @RestControllerAdvice
 public class GlobalExceptionHandler {
 
@@ -60,7 +62,11 @@ public class GlobalExceptionHandler {
     // ===== CATCH ALL =====
     @ExceptionHandler(Exception.class)
     @ResponseStatus(HttpStatus.INTERNAL_SERVER_ERROR)
-    public ApiResponse<Object> handleException(Exception ex) {
+    public ApiResponse<Object> handleException(Exception e) {
+
+        // 🔥 Log full stack trace (quan trọng nhất)
+        log.error("Lỗi hệ thống xảy ra: ", e);
+
         return ApiResponse.error(500, null,"Internal Server Error");
     }
 }

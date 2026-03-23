@@ -1,0 +1,33 @@
+2026-03-23T17:48:58.644+07:00  INFO 12832 --- [ss10] [main] springboot.ss11.Ss11Application          : Starting Ss11Application using Java 17.0.17 with PID 12832 (C:\Users\Duong Van Tra\Documents\Rikkei\spring boot\ss10\ss10\build\classes\java\main started by Duong Van Tra in C:\Users\Duong Van Tra\Documents\Rikkei\spring boot\ss10\ss10)
+2026-03-23T17:48:58.651+07:00  INFO 12832 --- [ss10] [main] springboot.ss11.Ss11Application          : No active profile set, falling back to 1 default profile: "default"
+2026-03-23T17:48:59.424+07:00  INFO 12832 --- [ss10] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-23T17:48:59.505+07:00  INFO 12832 --- [ss10] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 65 ms. Found 1 JPA repository interface.
+2026-03-23T17:49:00.345+07:00  INFO 12832 --- [ss10] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-03-23T17:49:00.364+07:00  INFO 12832 --- [ss10] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-03-23T17:49:00.365+07:00  INFO 12832 --- [ss10] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.18]
+2026-03-23T17:49:00.451+07:00  INFO 12832 --- [ss10] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 1743 ms
+2026-03-23T17:49:00.691+07:00  INFO 12832 --- [ss10] [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-03-23T17:49:00.771+07:00  INFO 12832 --- [ss10] [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.7.Final
+2026-03-23T17:49:01.493+07:00  INFO 12832 --- [ss10] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-03-23T17:49:01.556+07:00  INFO 12832 --- [ss10] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-03-23T17:49:01.829+07:00  INFO 12832 --- [ss10] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@37c87fcc
+2026-03-23T17:49:01.834+07:00  INFO 12832 --- [ss10] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-03-23T17:49:01.889+07:00  WARN 12832 --- [ss10] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-03-23T17:49:01.935+07:00  INFO 12832 --- [ss10] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/demo_db]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 18.0
+	Default catalog/schema: demo_db/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-03-23T17:49:03.307+07:00  INFO 12832 --- [ss10] [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-03-23T17:49:03.395+07:00  INFO 12832 --- [ss10] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-03-23T17:49:03.485+07:00  INFO 12832 --- [ss10] [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-03-23T17:49:03.652+07:00  WARN 12832 --- [ss10] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-03-23T17:49:04.118+07:00  INFO 12832 --- [ss10] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-03-23T17:49:04.125+07:00  INFO 12832 --- [ss10] [main] springboot.ss11.Ss11Application          : Started Ss11Application in 6.055 seconds (process running for 6.834)

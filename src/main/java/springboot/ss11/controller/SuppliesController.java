@@ -16,7 +16,7 @@ import java.util.List;
 import java.util.Map;
 
 @RestController
-@RequestMapping({"/api/v1/supplies"})
+@RequestMapping({"/api/v1/employees"})
 @RequiredArgsConstructor
 public class SuppliesController {
     private final ISuppliesService supService;
